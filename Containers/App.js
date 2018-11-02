@@ -1,6 +1,8 @@
 import React, {Component } from 'react';
+import {observer} from "mobx-react";
 import {Platform,StyleSheet,Text, View} from 'react-native';
 import { FormInput, FormLabel, Button } from 'react-native-elements';
+
 import {homeStore} from '../store/HomeStore'
 const instructions = Platform.select({
     ios: 'Press Cmd+R to reload,\nCmd+D or shake for dev menu',
@@ -8,8 +10,9 @@ const instructions = Platform.select({
         'u'
 });
 
-export default class App extends Component  {
-    constructor(){
+@observer export default class App extends Component  {
+    constructor(props){
+        super(props);
         homeStore.prueba();
     }
     render() {

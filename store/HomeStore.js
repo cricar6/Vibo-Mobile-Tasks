@@ -1,4 +1,4 @@
-import { db, storage } from '../config/firebaseConfig';
+import { db, storage } from '../store/firebaseConfig';
 import { observable, action, computed } from 'mobx';
 class HomeStore {
    

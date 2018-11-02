@@ -11,11 +11,13 @@ const config = {
     databaseURL: "https://nm-app-b80df.firebaseio.com",
     projectId: "nm-app-b80df",
     storageBucket: "gs://nm-app-b80df.appspot.com",
-    messagingSenderId: "452799787770"
+    messagingSenderId: "452799787770",
   };
   firebase.initializeApp(config);
+  firebase.firestore().settings({ timestampsInSnapshots: true });
 
 export const db = firebase.firestore();
+
 export const storage = firebase.storage();
 export const auth = firebase.auth();
 export default db;
