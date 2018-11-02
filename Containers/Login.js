@@ -3,19 +3,15 @@ import {observer} from "mobx-react";
 import {Platform,StyleSheet,Text, View} from 'react-native';
 import { FormInput, FormLabel, Button } from 'react-native-elements';
 
-import {authStore} from '../store/AuthStore'
-import Home from './Home';
-import Login from './Login';
-import SignUp from './SignUp';
+@observer export default class Login extends Component  {
 
-
-@observer export default class App extends Component  {
     render() {
-        if(authStore.user) {
-            return ( <Home /> );
-        }
-        return ( <SignUp/>  );
-    }
+        return (
+          <View style={styles.container}>
+            <Text style={styles.welcome}>Welcome to React Native!</Text>
+          </View>
+        );
+      }
 }
 
 const styles = StyleSheet.create({

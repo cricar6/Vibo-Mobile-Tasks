@@ -3,18 +3,27 @@ import {observer} from "mobx-react";
 import {Platform,StyleSheet,Text, View} from 'react-native';
 import { FormInput, FormLabel, Button } from 'react-native-elements';
 
-import {authStore} from '../store/AuthStore'
-import Home from './Home';
-import Login from './Login';
-import SignUp from './SignUp';
+import {homeStore} from '../store/HomeStore'
 
 
-@observer export default class App extends Component  {
+@observer export default class Home extends Component  {
+
+    constructor(props){
+        super(props);
+        this.onSend = this.onSend.bind(this);
+    }
+
+    onSend() {
+        homeStore.prueba();
+    }
     render() {
-        if(authStore.user) {
-            return ( <Home /> );
-        }
-        return ( <SignUp/>  );
+        return ( 
+            <View style = {styles.container} > 
+            <Text style = {styles.welcome} >Hello android vibo app! </Text> 
+            <Button buttonStyle={styles.button}
+            title="Proyecto" large 
+            onPress={this.onSend} />
+            </View> );
     }
 }
 
