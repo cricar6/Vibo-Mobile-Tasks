@@ -1,4 +1,4 @@
-import * as firebase from 'firebase'
+/*import * as firebase from 'firebase'
 
 // Required for side-effects
 require("firebase/firestore");
@@ -20,4 +20,4 @@ export const db = firebase.firestore();
 
 export const storage = firebase.storage();
 export const auth = firebase.auth();
-export default db;
+export default db;*/

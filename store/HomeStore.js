@@ -1,7 +1,6 @@
-import { db, storage } from '../store/firebaseConfig';
 import { observable, action, computed } from 'mobx';
 class HomeStore {
-   
+   /*
     @action prueba(){
         db.collection("pruebaReactNative").add({
             first: "Ada",
@@ -15,6 +14,7 @@ class HomeStore {
             console.error("Error adding document: ", error);
         });
         
-    }
+    }*/
+
 }
 export const homeStore = new HomeStore();

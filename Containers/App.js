@@ -11,21 +11,14 @@ const instructions = Platform.select({
 });
 
 @observer export default class App extends Component  {
-    constructor(props){
-        super(props);
-        homeStore.prueba();
-    }
     render() {
         return ( 
             <View style = {styles.container} > 
-            <Text style = {styles.welcome} >Welcome 2to Vibo Home! </Text> 
-            <Button
-        buttonStyle={styles.button}
-        title="Proyecto"
-        large
-    />
+            <Text style = {styles.welcome} > This is Vibo Home! </Text> 
+            <Button buttonStyle={styles.button}
+            title="Proyecto" large />
             </View> );
-}
+    }
 }
 
 const styles = StyleSheet.create({
