@@ -11,12 +11,22 @@ const instructions = Platform.select({
 });
 
 @observer export default class App extends Component  {
+
+    constructor(props){
+        super(props);
+        this.onSend = this.onSend.bind(this);
+    }
+
+    onSend() {
+        homeStore.prueba();
+    }
     render() {
         return ( 
             <View style = {styles.container} > 
-            <Text style = {styles.welcome} > This is Vibo Home! </Text> 
+            <Text style = {styles.welcome} >Hello android vibo app! </Text> 
             <Button buttonStyle={styles.button}
-            title="Proyecto" large />
+            title="Proyecto" large 
+            onPress={this.onSend} />
             </View> );
     }
 }

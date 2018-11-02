@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "452799787770",
+    "firebase_url": "https://nm-app-b80df.firebaseio.com",
+    "project_id": "nm-app-b80df",
+    "storage_bucket": "nm-app-b80df.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:452799787770:android:313d50a6d6f36502",
+        "android_client_info": {
+          "package_name": "com.awesomeprojectdos"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "452799787770-vkjfp65md713f8jtvnpe1f21vt1uc8fc.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAFle9a-HqU26we2g10a5uFkf_N1clp9G4"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

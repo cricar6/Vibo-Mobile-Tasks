@@ -1,20 +1,19 @@
 import { observable, action, computed } from 'mobx';
+import firebase from 'react-native-firebase';
+
 class HomeStore {
-   /*
-    @action prueba(){
-        db.collection("pruebaReactNative").add({
-            first: "Ada",
-            last: "Lovelace",
-            born: 1815
-        })
-        .then(function(docRef) {
-            console.log("Document written with ID: ", docRef.id);
-        })
-        .catch(function(error) {
-            console.error("Error adding document: ", error);
+
+    @observable ref = firebase.firestore().collection('pruebaNative');
+    constructor(){
+
+    }
+@action prueba() {
+       this.ref.add({
+          title: "Hello native",
+          complete: false,
         });
-        
-    }*/
+}
+
 
 }
 export const homeStore = new HomeStore();
